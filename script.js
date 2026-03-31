@@ -1,4 +1,3 @@
-// Usa tu propia clave de WeatherAPI
 const API_KEY = "c4ca19936fb749869bb145417251410";
 
 async function buscarClima() {

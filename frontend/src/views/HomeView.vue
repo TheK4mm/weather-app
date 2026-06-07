@@ -16,7 +16,7 @@ onMounted(() => search('Bogotá'))
 
 <template>
   <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center px-4 py-8">
-    <h1 class="mb-6 text-3xl font-semibold text-white drop-shadow">⛅ App del Clima</h1>
+    <h1 class="mb-6 text-3xl font-semibold text-white drop-shadow">⛅ Consulta el clima actual</h1>
 
     <SearchBar :units="units" :loading="loading" @search="search" @toggle-units="toggleUnits" />
 

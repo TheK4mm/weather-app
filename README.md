@@ -21,8 +21,8 @@ con OpenWeatherMap directamente. Así la API key permanece secreta y la lógica 
 │  Vue 3 SPA │  ───────────────────►   │                 FastAPI                  │
 │ (frontend) │  ◄───────────────────   │                                          │
 └────────────┘   contrato propio       │  routes → controllers → services →       │
-                                        │                          integrations ──┼──► OpenWeatherMap
-                                        └──────────────────────────────────────────┘
+                                       │                          integrations ──┼──► OpenWeatherMap
+                                       └──────────────────────────────────────────┘
 ```
 
 **Backend en capas** (una petición fluye de arriba a abajo):

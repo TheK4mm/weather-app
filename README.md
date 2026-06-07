@@ -1,6 +1,6 @@
-# Weather App — Full-Stack (FastAPI + Vue 3)
+# Weather Open App — Full-Stack (FastAPI + Vue 3)
 
-Aplicación del clima reescrita con una arquitectura **full-stack profesional**: un
+Aplicación del clima reescrita con una arquitectura **full-stack**: un
 **backend FastAPI** que consume **OpenWeatherMap** y expone una API limpia, y un
 **frontend SPA en Vue 3** que la consume. Permite consultar el **clima actual** y el
 **pronóstico de 5 días** de cualquier ciudad.
@@ -21,7 +21,7 @@ con OpenWeatherMap directamente. Así la API key permanece secreta y la lógica 
 │  Vue 3 SPA │  ───────────────────►   │                 FastAPI                  │
 │ (frontend) │  ◄───────────────────   │                                          │
 └────────────┘   contrato propio       │  routes → controllers → services →       │
-                                       │                          integrations ──┼──► OpenWeatherMap
+                                       │                          integrations  ──┼──► OpenWeatherMap
                                        └──────────────────────────────────────────┘
 ```
 

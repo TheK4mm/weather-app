@@ -1,4 +1,4 @@
-# 🌤️ Weather App — Full-Stack (FastAPI + Vue 3)
+# Weather App — Full-Stack (FastAPI + Vue 3)
 
 Aplicación del clima reescrita con una arquitectura **full-stack profesional**: un
 **backend FastAPI** que consume **OpenWeatherMap** y expone una API limpia, y un
@@ -11,7 +11,7 @@ Aplicación del clima reescrita con una arquitectura **full-stack profesional**:
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 Patrón **BFF (Backend-for-Frontend)**: el frontend solo habla con nuestro backend, nunca
 con OpenWeatherMap directamente. Así la API key permanece secreta y la lógica se centraliza.
@@ -41,7 +41,7 @@ con OpenWeatherMap directamente. Así la API key permanece secreta y la lógica 
 
 ---
 
-## 📂 Estructura
+## Estructura
 
 ```
 weather-app/
@@ -65,7 +65,7 @@ weather-app/
 
 ---
 
-## 🧰 Stack
+## Stack
 
 **Backend:** FastAPI · Uvicorn · httpx · Pydantic v2 · pydantic-settings · cachetools
 · pytest + respx
@@ -73,7 +73,7 @@ weather-app/
 
 ---
 
-## ✅ Requisitos
+## Requisitos
 
 - **Python 3.11+** (backend)
 - **Node.js 18+** (frontend)
@@ -81,7 +81,7 @@ weather-app/
 
 ---
 
-## 🚀 Puesta en marcha (manual)
+## Puesta en marcha (manual)
 
 ### 1) Backend
 
@@ -113,7 +113,7 @@ npm run dev
 
 ---
 
-## 🐳 Puesta en marcha (Docker, opcional)
+## Puesta en marcha (Docker, opcional)
 
 ```powershell
 # Requiere backend/.env con tu OWM_API_KEY
@@ -125,7 +125,7 @@ docker compose up --build
 
 ---
 
-## 🔌 Endpoints principales
+## Endpoints principales
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
@@ -138,7 +138,7 @@ Parámetros: `city` (obligatorio), `units` (`metric`\|`imperial`), `lang` (def. 
 
 ---
 
-## 🧪 Pruebas
+## Pruebas
 
 ```powershell
 cd backend
@@ -149,7 +149,7 @@ Las pruebas no consumen la API real (mockean el HTTP con `respx`), así que no n
 
 ---
 
-## 🔐 Notas
+## Notas
 
 - La **API key vive solo en el backend** (`backend/.env`), nunca en el navegador.
 - La capa `integrations/` está aislada: cambiar de proveedor (p. ej. a WeatherAPI.com)

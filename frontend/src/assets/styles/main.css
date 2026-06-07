@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Fondos degradados según la condición del clima (toggle desde App.vue). */
+.bg-weather {
+  background-image: linear-gradient(to bottom, #89f7fe, #66a6ff);
+}
+.bg-weather-clear {
+  background-image: linear-gradient(to bottom, #56ccf2, #2f80ed);
+}
+.bg-weather-clouds {
+  background-image: linear-gradient(to bottom, #8aa6c1, #5b7a99);
+}
+.bg-weather-rain {
+  background-image: linear-gradient(to bottom, #4b6377, #2c3e50);
+}
+.bg-weather-snow {
+  background-image: linear-gradient(to bottom, #c9e9ff, #8bb8e8);
+}
+.bg-weather-night {
+  background-image: linear-gradient(to bottom, #1f2937, #0f172a);
+}

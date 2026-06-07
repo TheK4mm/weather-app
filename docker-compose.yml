@@ -1,0 +1,24 @@
+# Orquestación opcional de toda la app (backend + frontend).
+# Uso:  docker compose up --build
+# Requiere un archivo backend/.env con tu OWM_API_KEY.
+
+services:
+  backend:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # URL que usará el navegador para llegar al backend (puerto del host).
+        VITE_API_BASE_URL: http://localhost:8000/api
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
